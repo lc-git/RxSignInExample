@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29F88728BC99C5ED0204E199 /* Pods_RxSignInExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC959E0B63217F14B2D9D4 /* Pods_RxSignInExample.framework */; };
+		518F373683C9641BD91BA792 /* Pods_RxSignInExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AF18DFE767C04B7E07435F /* Pods_RxSignInExampleTests.framework */; };
+		B84074AB3921C2F4C415CA85 /* Pods_RxSignInExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CEB573106E2F7B8FF4B90C /* Pods_RxSignInExampleUITests.framework */; };
+		E58367BC1D9D035500574B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58367BB1D9D035500574B5D /* AppDelegate.swift */; };
+		E58367C11D9D035500574B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58367BF1D9D035500574B5D /* Main.storyboard */; };
+		E58367C31D9D035500574B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58367C21D9D035500574B5D /* Assets.xcassets */; };
+		E58367C61D9D035500574B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58367C41D9D035500574B5D /* LaunchScreen.storyboard */; };
+		E58367D11D9D035500574B5D /* RxSignInExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58367D01D9D035500574B5D /* RxSignInExampleTests.swift */; };
+		E58367DC1D9D035500574B5D /* RxSignInExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58367DB1D9D035500574B5D /* RxSignInExampleUITests.swift */; };
+		E58367FD1D9D33FB00574B5D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58367FC1D9D33FB00574B5D /* SignInViewController.swift */; };
+		E58367FF1D9D340A00574B5D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58367FE1D9D340A00574B5D /* SignInViewModel.swift */; };
+		E58368011D9D341800574B5D /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58368001D9D341800574B5D /* GithubAPI.swift */; };
+		E58368031D9D342D00574B5D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58368021D9D342D00574B5D /* ActivityIndicator.swift */; };
+		E58368051D9D344100574B5D /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58368041D9D344100574B5D /* Observable+ObjectMapper.swift */; };
+		E58368091D9D358900574B5D /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E58368081D9D358900574B5D /* background.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E58367CD1D9D035500574B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E58367B01D9D035400574B5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58367B71D9D035500574B5D;
+			remoteInfo = RxSignInExample;
+		};
+		E58367D81D9D035500574B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E58367B01D9D035400574B5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58367B71D9D035500574B5D;
+			remoteInfo = RxSignInExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099CB2D8D3DE29699EDE9683 /* Pods-RxSignInExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSignInExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSignInExample/Pods-RxSignInExample.release.xcconfig"; sourceTree = "<group>"; };
+		2DFC959E0B63217F14B2D9D4 /* Pods_RxSignInExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSignInExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CEB573106E2F7B8FF4B90C /* Pods_RxSignInExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSignInExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AF18DFE767C04B7E07435F /* Pods_RxSignInExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSignInExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE42AF48DBA03A7199DA214 /* Pods-RxSignInExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSignInExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSignInExampleUITests/Pods-RxSignInExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		584E8270FD314D930ED34AE0 /* Pods-RxSignInExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSignInExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSignInExampleTests/Pods-RxSignInExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6F999FB4F4AF4B614AE3916 /* Pods-RxSignInExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSignInExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSignInExampleUITests/Pods-RxSignInExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D78741FE852826FF7C47C24B /* Pods-RxSignInExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSignInExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSignInExample/Pods-RxSignInExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E58367B81D9D035500574B5D /* RxSignInExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSignInExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58367BB1D9D035500574B5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E58367C01D9D035500574B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E58367C21D9D035500574B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E58367C51D9D035500574B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E58367C71D9D035500574B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58367CC1D9D035500574B5D /* RxSignInExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSignInExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58367D01D9D035500574B5D /* RxSignInExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSignInExampleTests.swift; sourceTree = "<group>"; };
+		E58367D21D9D035500574B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58367D71D9D035500574B5D /* RxSignInExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSignInExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58367DB1D9D035500574B5D /* RxSignInExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSignInExampleUITests.swift; sourceTree = "<group>"; };
+		E58367DD1D9D035500574B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58367FC1D9D33FB00574B5D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ViewController/SignInViewController.swift; sourceTree = "<group>"; };
+		E58367FE1D9D340A00574B5D /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewModel.swift; path = ViewModel/SignInViewModel.swift; sourceTree = "<group>"; };
+		E58368001D9D341800574B5D /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubAPI.swift; path = Networking/GithubAPI.swift; sourceTree = "<group>"; };
+		E58368021D9D342D00574B5D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Service/ActivityIndicator.swift; sourceTree = "<group>"; };
+		E58368041D9D344100574B5D /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Observable+ObjectMapper.swift"; path = "Extension/Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
+		E58368081D9D358900574B5D /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		F89160F055EBA232E9A55215 /* Pods-RxSignInExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSignInExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSignInExampleTests/Pods-RxSignInExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E58367B51D9D035500574B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F88728BC99C5ED0204E199 /* Pods_RxSignInExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58367C91D9D035500574B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518F373683C9641BD91BA792 /* Pods_RxSignInExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58367D41D9D035500574B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B84074AB3921C2F4C415CA85 /* Pods_RxSignInExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B3124102456F069365BBCDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D78741FE852826FF7C47C24B /* Pods-RxSignInExample.debug.xcconfig */,
+				099CB2D8D3DE29699EDE9683 /* Pods-RxSignInExample.release.xcconfig */,
+				584E8270FD314D930ED34AE0 /* Pods-RxSignInExampleTests.debug.xcconfig */,
+				F89160F055EBA232E9A55215 /* Pods-RxSignInExampleTests.release.xcconfig */,
+				3AE42AF48DBA03A7199DA214 /* Pods-RxSignInExampleUITests.debug.xcconfig */,
+				D6F999FB4F4AF4B614AE3916 /* Pods-RxSignInExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14B253D03503A017BFEAEF20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC959E0B63217F14B2D9D4 /* Pods_RxSignInExample.framework */,
+				35AF18DFE767C04B7E07435F /* Pods_RxSignInExampleTests.framework */,
+				34CEB573106E2F7B8FF4B90C /* Pods_RxSignInExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E58367AF1D9D035400574B5D = {
+			isa = PBXGroup;
+			children = (
+				E58367BA1D9D035500574B5D /* RxSignInExample */,
+				E58367CF1D9D035500574B5D /* RxSignInExampleTests */,
+				E58367DA1D9D035500574B5D /* RxSignInExampleUITests */,
+				E58367B91D9D035500574B5D /* Products */,
+				0B3124102456F069365BBCDD /* Pods */,
+				14B253D03503A017BFEAEF20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E58367B91D9D035500574B5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E58367B81D9D035500574B5D /* RxSignInExample.app */,
+				E58367CC1D9D035500574B5D /* RxSignInExampleTests.xctest */,
+				E58367D71D9D035500574B5D /* RxSignInExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E58367BA1D9D035500574B5D /* RxSignInExample */ = {
+			isa = PBXGroup;
+			children = (
+				E58367FA1D9D328E00574B5D /* Extension */,
+				E58367F91D9D328300574B5D /* Service */,
+				E58367F71D9D322700574B5D /* Networking */,
+				E58367F61D9D320D00574B5D /* ViewModel */,
+				E58367F51D9D31EC00574B5D /* ViewController */,
+				E58367BB1D9D035500574B5D /* AppDelegate.swift */,
+				E58367BF1D9D035500574B5D /* Main.storyboard */,
+				E58367C21D9D035500574B5D /* Assets.xcassets */,
+				E58367C41D9D035500574B5D /* LaunchScreen.storyboard */,
+				E58367C71D9D035500574B5D /* Info.plist */,
+				E58368081D9D358900574B5D /* background.jpg */,
+			);
+			path = RxSignInExample;
+			sourceTree = "<group>";
+		};
+		E58367CF1D9D035500574B5D /* RxSignInExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E58367D01D9D035500574B5D /* RxSignInExampleTests.swift */,
+				E58367D21D9D035500574B5D /* Info.plist */,
+			);
+			path = RxSignInExampleTests;
+			sourceTree = "<group>";
+		};
+		E58367DA1D9D035500574B5D /* RxSignInExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E58367DB1D9D035500574B5D /* RxSignInExampleUITests.swift */,
+				E58367DD1D9D035500574B5D /* Info.plist */,
+			);
+			path = RxSignInExampleUITests;
+			sourceTree = "<group>";
+		};
+		E58367F51D9D31EC00574B5D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E58367FC1D9D33FB00574B5D /* SignInViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E58367F61D9D320D00574B5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E58367FE1D9D340A00574B5D /* SignInViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E58367F71D9D322700574B5D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E58368001D9D341800574B5D /* GithubAPI.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E58367F91D9D328300574B5D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E58368021D9D342D00574B5D /* ActivityIndicator.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		E58367FA1D9D328E00574B5D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E58368041D9D344100574B5D /* Observable+ObjectMapper.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E58367B71D9D035500574B5D /* RxSignInExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58367E01D9D035500574B5D /* Build configuration list for PBXNativeTarget "RxSignInExample" */;
+			buildPhases = (
+				DA2BE2463C028F68734A02F0 /* [CP] Check Pods Manifest.lock */,
+				E58367B41D9D035500574B5D /* Sources */,
+				E58367B51D9D035500574B5D /* Frameworks */,
+				E58367B61D9D035500574B5D /* Resources */,
+				84FB0C61224258A7C6687D42 /* [CP] Embed Pods Frameworks */,
+				B38642CE8AC0BA0F83FCB2D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSignInExample;
+			productName = RxSignInExample;
+			productReference = E58367B81D9D035500574B5D /* RxSignInExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E58367CB1D9D035500574B5D /* RxSignInExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58367E31D9D035500574B5D /* Build configuration list for PBXNativeTarget "RxSignInExampleTests" */;
+			buildPhases = (
+				5E56AD94A7BFC6534582AE4D /* [CP] Check Pods Manifest.lock */,
+				E58367C81D9D035500574B5D /* Sources */,
+				E58367C91D9D035500574B5D /* Frameworks */,
+				E58367CA1D9D035500574B5D /* Resources */,
+				2A909109243A8B676CE8F95D /* [CP] Embed Pods Frameworks */,
+				A42F57B95E1DA4B105414EF1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E58367CE1D9D035500574B5D /* PBXTargetDependency */,
+			);
+			name = RxSignInExampleTests;
+			productName = RxSignInExampleTests;
+			productReference = E58367CC1D9D035500574B5D /* RxSignInExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E58367D61D9D035500574B5D /* RxSignInExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58367E61D9D035500574B5D /* Build configuration list for PBXNativeTarget "RxSignInExampleUITests" */;
+			buildPhases = (
+				5705A9387B0754936D3CB9E0 /* [CP] Check Pods Manifest.lock */,
+				E58367D31D9D035500574B5D /* Sources */,
+				E58367D41D9D035500574B5D /* Frameworks */,
+				E58367D51D9D035500574B5D /* Resources */,
+				F81ADDFCED6E4F1B1F112DFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E58367D91D9D035500574B5D /* PBXTargetDependency */,
+			);
+			name = RxSignInExampleUITests;
+			productName = RxSignInExampleUITests;
+			productReference = E58367D71D9D035500574B5D /* RxSignInExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E58367B01D9D035400574B5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ERStone;
+				TargetAttributes = {
+					E58367B71D9D035500574B5D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					E58367CB1D9D035500574B5D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E58367B71D9D035500574B5D;
+					};
+					E58367D61D9D035500574B5D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E58367B71D9D035500574B5D;
+					};
+				};
+			};
+			buildConfigurationList = E58367B31D9D035400574B5D /* Build configuration list for PBXProject "RxSignInExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E58367AF1D9D035400574B5D;
+			productRefGroup = E58367B91D9D035500574B5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E58367B71D9D035500574B5D /* RxSignInExample */,
+				E58367CB1D9D035500574B5D /* RxSignInExampleTests */,
+				E58367D61D9D035500574B5D /* RxSignInExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E58367B61D9D035500574B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58367C61D9D035500574B5D /* LaunchScreen.storyboard in Resources */,
+				E58368091D9D358900574B5D /* background.jpg in Resources */,
+				E58367C31D9D035500574B5D /* Assets.xcassets in Resources */,
+				E58367C11D9D035500574B5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58367CA1D9D035500574B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58367D51D9D035500574B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A909109243A8B676CE8F95D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSignInExampleTests/Pods-RxSignInExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5705A9387B0754936D3CB9E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E56AD94A7BFC6534582AE4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84FB0C61224258A7C6687D42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSignInExample/Pods-RxSignInExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A42F57B95E1DA4B105414EF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSignInExampleTests/Pods-RxSignInExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38642CE8AC0BA0F83FCB2D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSignInExample/Pods-RxSignInExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2BE2463C028F68734A02F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F81ADDFCED6E4F1B1F112DFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSignInExampleUITests/Pods-RxSignInExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E58367B41D9D035500574B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58368051D9D344100574B5D /* Observable+ObjectMapper.swift in Sources */,
+				E58367FD1D9D33FB00574B5D /* SignInViewController.swift in Sources */,
+				E58368031D9D342D00574B5D /* ActivityIndicator.swift in Sources */,
+				E58367BC1D9D035500574B5D /* AppDelegate.swift in Sources */,
+				E58367FF1D9D340A00574B5D /* SignInViewModel.swift in Sources */,
+				E58368011D9D341800574B5D /* GithubAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58367C81D9D035500574B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58367D11D9D035500574B5D /* RxSignInExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58367D31D9D035500574B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58367DC1D9D035500574B5D /* RxSignInExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E58367CE1D9D035500574B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E58367B71D9D035500574B5D /* RxSignInExample */;
+			targetProxy = E58367CD1D9D035500574B5D /* PBXContainerItemProxy */;
+		};
+		E58367D91D9D035500574B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E58367B71D9D035500574B5D /* RxSignInExample */;
+			targetProxy = E58367D81D9D035500574B5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E58367BF1D9D035500574B5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E58367C01D9D035500574B5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E58367C41D9D035500574B5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E58367C51D9D035500574B5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E58367DE1D9D035500574B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E58367DF1D9D035500574B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E58367E11D9D035500574B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78741FE852826FF7C47C24B /* Pods-RxSignInExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RxSignInExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = erstone.RxSignInExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E58367E21D9D035500574B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 099CB2D8D3DE29699EDE9683 /* Pods-RxSignInExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RxSignInExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = erstone.RxSignInExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E58367E41D9D035500574B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584E8270FD314D930ED34AE0 /* Pods-RxSignInExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RxSignInExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = erstone.RxSignInExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSignInExample.app/RxSignInExample";
+			};
+			name = Debug;
+		};
+		E58367E51D9D035500574B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F89160F055EBA232E9A55215 /* Pods-RxSignInExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RxSignInExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = erstone.RxSignInExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSignInExample.app/RxSignInExample";
+			};
+			name = Release;
+		};
+		E58367E71D9D035500574B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AE42AF48DBA03A7199DA214 /* Pods-RxSignInExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RxSignInExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = erstone.RxSignInExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RxSignInExample;
+			};
+			name = Debug;
+		};
+		E58367E81D9D035500574B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F999FB4F4AF4B614AE3916 /* Pods-RxSignInExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RxSignInExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = erstone.RxSignInExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RxSignInExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E58367B31D9D035400574B5D /* Build configuration list for PBXProject "RxSignInExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58367DE1D9D035500574B5D /* Debug */,
+				E58367DF1D9D035500574B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58367E01D9D035500574B5D /* Build configuration list for PBXNativeTarget "RxSignInExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58367E11D9D035500574B5D /* Debug */,
+				E58367E21D9D035500574B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58367E31D9D035500574B5D /* Build configuration list for PBXNativeTarget "RxSignInExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58367E41D9D035500574B5D /* Debug */,
+				E58367E51D9D035500574B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58367E61D9D035500574B5D /* Build configuration list for PBXNativeTarget "RxSignInExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58367E71D9D035500574B5D /* Debug */,
+				E58367E81D9D035500574B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E58367B01D9D035400574B5D /* Project object */;
+}

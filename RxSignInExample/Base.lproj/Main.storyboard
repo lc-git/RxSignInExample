@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="RxSignInExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jz6-sl-wVI"/>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-5V-w4h">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="s6v-pk-IzS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsA-co-Id5">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="d1c-gK-eq8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-jA-el1">
+                                <color key="backgroundColor" red="0.17002032919999999" green="0.54375756600000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="BJs-OM-a0G"/>
+                                    <constraint firstAttribute="height" constant="50" id="UVA-FS-3hq"/>
+                                    <constraint firstAttribute="width" constant="293" id="c0W-RI-oqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vQc-QV-xta"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="7SX-5V-w4h" secondAttribute="trailing" constant="25" id="5S3-cU-jEl"/>
+                            <constraint firstItem="vQc-QV-xta" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5cH-XV-MnT"/>
+                            <constraint firstItem="vQc-QV-xta" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="9Zo-Lv-GdU"/>
+                            <constraint firstItem="vsA-co-Id5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="HDS-oA-UX8"/>
+                            <constraint firstItem="vsA-co-Id5" firstAttribute="top" secondItem="7SX-5V-w4h" secondAttribute="bottom" constant="25" id="Kea-r8-s8M"/>
+                            <constraint firstItem="7SX-5V-w4h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="LaL-qi-We3"/>
+                            <constraint firstItem="yS9-jA-el1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TMj-i0-1oT"/>
+                            <constraint firstItem="yS9-jA-el1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="aq1-Dr-8JO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yS9-jA-el1" secondAttribute="trailing" constant="25" id="cXk-ds-IdN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vsA-co-Id5" secondAttribute="trailing" constant="25" id="eZO-Nu-Jta"/>
+                            <constraint firstItem="jz6-sl-wVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iMb-i3-dCH"/>
+                            <constraint firstItem="jz6-sl-wVI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kmW-vs-ZZM"/>
+                            <constraint firstAttribute="bottom" secondItem="jz6-sl-wVI" secondAttribute="bottom" id="kq2-B4-JFa"/>
+                            <constraint firstAttribute="trailing" secondItem="jz6-sl-wVI" secondAttribute="trailing" id="oRU-lF-jrs"/>
+                            <constraint firstItem="yS9-jA-el1" firstAttribute="top" secondItem="vsA-co-Id5" secondAttribute="bottom" constant="75" id="sr9-r5-CLo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTF" destination="vsA-co-Id5" id="XGW-AX-foE"/>
+                        <outlet property="signInActivityIndicator" destination="vQc-QV-xta" id="4Vx-Nb-tHa"/>
+                        <outlet property="signInBtn" destination="yS9-jA-el1" id="0wm-uB-BUo"/>
+                        <outlet property="usernameTF" destination="7SX-5V-w4h" id="F4O-YH-6QO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="421" height="750"/>
+    </resources>
+</document>
